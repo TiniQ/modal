@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+<body>
+    <div class="modal" id="modal-step-one">
+        <div class="modal__content">
+            <h4 class="modal__title">Данные о доставке</h4>
+            <p class="modal__description">Чтобы узнать информация о посылке - введите её номер в поле ниже</p>
+            <div class="modal__search">
+                <input class="modal__input" type="number" placeholder="Введите номер...">
+            </div>
+            <button class="modal__button modal__next button">Далее</button>
+            <a class="modal__back modal__close" href="#">Вернуться назад</a>
+        </div>
+    </div>
+    <div class="modal" id="modal-step-two">
+        <div class="modal__content">
+            <h4 class="modal__title">Данные о доставке №5000315</h4>
+            <p class="modal__description">Посылка №5000315 уже находится на пути в Москву!</p>
+            <div class="swipe">
+                <div class="swipe__item">
+                    <h4 class="swipe__title">Общая информация</h4>
+                    <div class="swipe__content">
+                        <div class="swipe__content-item">
+                            <h5 class="swipe__content-title">Название:</h5>
+                            <span class="swipe__content-text">Iphone X</span>
+                        </div>
+                        <div class="swipe__content-item">
+                            <h5 class="swipe__content-title">К оплате:</h5>
+                            <span class="swipe__content-text">600$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe__item">
+                    <h4 class="swipe__title">Данные получателя</h4>
+                    <div class="swipe__content">
+                        <div class="swipe__content-item">
+                            <h5 class="swipe__content-title">Имя фамилия:</h5>
+                            <span class="swipe__content-text">Роман Владимирович</span>
+                        </div>
+                        <div class="swipe__content-item">
+                            <h5 class="swipe__content-title">Город отправления:</h5>
+                            <span class="swipe__content-text">Иваново</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe__item">
+                    <h4 class="swipe__title">Данные отправителя</h4>
+                    <div class="swipe__content">
+                        <div class="swipe__content-item">
+                            <h5 class="swipe__content-title">Имя фамилия:</h5>
+                            <span class="swipe__content-text">Эдвард Штейн</span>
+                        </div>
+                        <div class="swipe__content-item">
+                            <h5 class="swipe__content-title">Город отправления:</h5>
+                            <span class="swipe__content-text">Москва</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__button" type="submit">Оплатить</button>
+            <a class="modal__back modal__close" href="#">Вернуться назад</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="/">
+                    <img class="logo__image" src="./assets/img/logo.svg" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#uslugi">Услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#delivery">Данные о доставке</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="delivery">
+        <div class="container">
+            <div class="delivery__inner">
+                <button class="delivery__button">Modal1</button>
+                <button class="delivery__button2">Modal2</button>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <div class="swipe">
+                    <div class="swipe__item">
+                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__content">
+                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
+                        </div>
+                    </div>
+                    <div class="swipe__item">
+                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__content">
+                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
+                        </div>
+                    </div>
+                    <div class="swipe__item">
+                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__content">
+                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
+                        </div>
+                    </div>
+                    <div class="swipe__item">
+                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__content">
+                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="logo" href="/">
+                    <img class="logo__image" src="./assets/img/logo.svg" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#uslugi">Услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#delivery">Данные о доставке</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <span class="footer__copyright">© Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/swipe.js"></script>
+</body>
+</html>

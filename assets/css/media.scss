@@ -1,0 +1,76 @@
+@media (max-width: 640px) {
+    .modal {
+        &__content {
+            padding: 3.6rem 3.7rem;
+        }
+        &__description {
+            font-size: 1.6rem;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .modal {
+        &__content {
+            padding: 2.6rem 2.7rem;
+        }
+        &__title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        &__description {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+        }
+        &__search {
+            height: 4.5rem;
+            margin-bottom: 1.9rem;
+        }
+        &__input {
+            height: 4.5rem;
+            font-size: 1.4rem;
+        }
+        &__button {
+            margin-bottom: 2rem;
+        }
+        .swipe {
+            &__item {
+                padding-bottom: 0.5rem;
+            }
+            &__title {
+                font-size: 1.5rem;
+            }
+            &__content {
+                &-item {
+                    margin-top: 1rem;
+                    padding-bottom: 0.3rem;
+                    &:not(:last-child) {
+                        margin-bottom: 0.6rem;
+                    }
+                }
+                &-title {
+                    font-size: 1.3rem;
+                }
+                &-text {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .menu {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    .modal {
+        &__description {
+            font-size: 1.2rem;
+        }
+        &__button {
+            font-size: 1.6rem;
+            padding: 1.5rem 0;
+        }
+        &__back {
+            font-size: 1.4rem;
+        }
+    }
+}
