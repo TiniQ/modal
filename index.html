@@ -5,140 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div class="modal" id="modal-step-one">
+    <div class="modal">
         <div class="modal__content">
-            <h4 class="modal__title">Данные о доставке</h4>
+            <h3 class="modal__title">Данные о доставке</h3>
             <p class="modal__description">Чтобы узнать информация о посылке - введите её номер в поле ниже</p>
             <div class="modal__search">
-                <input class="modal__input" type="number" placeholder="Введите номер...">
+                <input class="modal__search-input" type="number">
+                <div class="modal__search-icon"><svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.245 0C5.045 0 0 5.043 0 11.241c0 6.198 5.044 11.24 11.245 11.24 6.2 0 11.244-5.042 11.244-11.24S17.445 0 11.245 0zm0 20.634c-5.184 0-9.402-4.214-9.402-9.393 0-5.18 4.218-9.393 9.402-9.393 5.183 0 9.4 4.213 9.4 9.393 0 5.18-4.216 9.393-9.4 9.393z" fill="#D30032"/><path d="M25.228 23.921l-6.052-6.036a.92.92 0 0 0-1.304.003.926.926 0 0 0 .004 1.307l6.052 6.036a.918.918 0 0 0 1.304-.003.926.926 0 0 0-.004-1.307z" fill="#D30032"/></svg></div>
             </div>
-            <button class="modal__button modal__next button">Далее</button>
-            <a class="modal__back modal__close" href="#">Вернуться назад</a>
-        </div>
-    </div>
-    <div class="modal" id="modal-step-two">
-        <div class="modal__content">
-            <h4 class="modal__title">Данные о доставке №5000315</h4>
-            <p class="modal__description">Посылка №5000315 уже находится на пути в Москву!</p>
-            <div class="swipe">
-                <div class="swipe__item">
-                    <h4 class="swipe__title">Общая информация</h4>
-                    <div class="swipe__content">
-                        <div class="swipe__content-item">
-                            <h5 class="swipe__content-title">Название:</h5>
-                            <span class="swipe__content-text">Iphone X</span>
-                        </div>
-                        <div class="swipe__content-item">
-                            <h5 class="swipe__content-title">К оплате:</h5>
-                            <span class="swipe__content-text">600$</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swipe__item">
-                    <h4 class="swipe__title">Данные получателя</h4>
-                    <div class="swipe__content">
-                        <div class="swipe__content-item">
-                            <h5 class="swipe__content-title">Имя фамилия:</h5>
-                            <span class="swipe__content-text">Роман Владимирович</span>
-                        </div>
-                        <div class="swipe__content-item">
-                            <h5 class="swipe__content-title">Город отправления:</h5>
-                            <span class="swipe__content-text">Иваново</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swipe__item">
-                    <h4 class="swipe__title">Данные отправителя</h4>
-                    <div class="swipe__content">
-                        <div class="swipe__content-item">
-                            <h5 class="swipe__content-title">Имя фамилия:</h5>
-                            <span class="swipe__content-text">Эдвард Штейн</span>
-                        </div>
-                        <div class="swipe__content-item">
-                            <h5 class="swipe__content-title">Город отправления:</h5>
-                            <span class="swipe__content-text">Москва</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="modal__button" type="submit">Оплатить</button>
-            <a class="modal__back modal__close" href="#">Вернуться назад</a>
+            <a class="modal__button button" href="#">Дальше</a>
+            <a class="modal__back" href="#">Вернуться назад</a>
         </div>
     </div>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="logo" href="/">
-                    <img class="logo__image" src="./assets/img/logo.svg" alt="logo">
-                </a>
+                <a class="logo" href="#"><img class="logo__image" src="./assets/img/logo.svg" alt="logo"></a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
                         <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
                         <li class="menu__item"><a class="menu__link" href="#uslugi">Услуги</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#delivery">Данные о доставке</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Данные о доставке</a></li>
                         <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="delivery">
+    <div class="about">
         <div class="container">
-            <div class="delivery__inner">
-                <button class="delivery__button">Modal1</button>
-                <button class="delivery__button2">Modal2</button>
+            <div class="about__inner">
+                <picture><img class="about__image" src="./assets/img/about.png" alt="about-image"></picture>
+                <div class="about__info">
+                    <h2 class="about__title">Идейные соображения высшего порядка</h2>
+                    <p class="about__description">Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что рамки и место обучения кадров позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                    <a class="about__button button" href="#faq">Подробнее</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="faq">
+    <div class="delivery" id="delivery">
         <div class="container">
-            <div class="faq__inner">
-                <div class="swipe">
-                    <div class="swipe__item">
-                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
-                        <div class="swipe__content">
-                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
-                        </div>
-                    </div>
-                    <div class="swipe__item">
-                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
-                        <div class="swipe__content">
-                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
-                        </div>
-                    </div>
-                    <div class="swipe__item">
-                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
-                        <div class="swipe__content">
-                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
-                        </div>
-                    </div>
-                    <div class="swipe__item">
-                        <h4 class="swipe__title">Могу ли я перенаправить посылку без регистрации?</h4>
-                        <div class="swipe__content">
-                            <p class="swipe__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex recusandae deserunt dolorem vel delectus culpa ipsa ipsam placeat et suscipit beatae modi facere voluptate quidem odio sint, libero nesciunt! Ducimus delectus deserunt est excepturi velit repudiandae laudantium rerum incidunt nulla eius, numquam fugit doloremque voluptate provident quo eos eum.</p>
-                        </div>
-                    </div>
+            <div class="delivery__inner">
+                <div class="delivery__info">
+                    <h2 class="delivery__title">Данные о доставке</h2>
+                    <p class="delivery__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке.</p>
+                    <a class="delivery__button button" href="#">Найти посылку</a>
                 </div>
+                <picture><img class="delivery__image" src="./assets/img/delivery.png" alt="delivery-image"></picture>
             </div>
         </div>
     </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <a class="logo" href="/">
-                    <img class="logo__image" src="./assets/img/logo.svg" alt="logo">
-                </a>
+                <a class="logo" href="#"><img class="logo__image" src="./assets/img/logo.svg" alt="logo"></a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
                         <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
                         <li class="menu__item"><a class="menu__link" href="#uslugi">Услуги</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#delivery">Данные о доставке</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Данные о доставке</a></li>
                         <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
@@ -147,6 +78,5 @@
         </div>
     </footer>
     <script src="./assets/js/modal.js"></script>
-    <script src="./assets/js/swipe.js"></script>
 </body>
 </html>
