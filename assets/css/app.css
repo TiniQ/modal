@@ -575,6 +575,10 @@ button:hover, .button:hover {
   }
 }
 
+.number {
+  margin-bottom: 1.5rem;
+}
+
 .expire1 {
   margin-right: 1rem;
 }
