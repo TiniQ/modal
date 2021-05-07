@@ -1,0 +1,423 @@
+@import './modules/fonts';
+@import './modules/vars';
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: $text;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+ul, ol {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: $title;
+}
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+button, input {
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    border: none;
+    outline: none;
+}
+button, .button {
+    color: #fff;
+    cursor: pointer;
+    padding: 2.4rem 7.5rem;
+    transition: .4s all;
+    border-radius: 1rem;
+    background-color: $accent;
+    &:hover {
+        background-color: $button-hover;
+        box-shadow: 0rem 2.2rem 6.4rem -1.2rem rgba(211, 0, 50, 0.5);
+    }
+}
+.number {
+    color: $accent;
+}
+.container {
+    max-width: 139.1rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+@media (max-width: 1401px) {
+    .container {
+        max-width: 129.1rem;
+    }
+}
+@media (max-width: 1299px) {
+    .container {
+        max-width: 119.1rem;
+    }
+}
+.header {
+    padding-top: 4rem;
+    font-size: 1.6rem;
+    margin-bottom: 11rem;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin: 0 2rem;
+    }
+    &__link {
+        transition: .4s all;
+        &.active, &:hover {
+            color: $accent;
+        }
+    }
+}
+.hero {
+    &__title, &__plus {
+        margin-bottom: 4rem;
+    }
+    &__button {
+        margin-right: 6rem;
+    }
+    &__more {
+        color: $accent;
+    }
+}
+.hero, .about, .delivery {
+    margin-bottom: 12.5rem;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        max-width: 68rem;
+        font-size: 4.8rem;
+        line-height: 1.25;
+    }
+}
+.about {
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+    &__description {
+        max-width: 67rem;
+        margin-bottom: 4.5rem;
+    }
+}
+.delivery {
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__description {
+        max-width: 73rem;
+        margin-bottom: 4rem;
+    }
+}
+.faq {
+    &__title {
+        font-size: 4.8rem;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+}
+.footer {
+    padding: 2.5rem 0;
+    font-size: 1.6rem;
+    border-top: 0.1rem solid $light-gray;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__copyright {
+        color: $copyright;
+    }
+}
+@media (max-width: 1159px) {
+    body {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    .hero, .about, .delivery{
+        &__title {
+            line-height: 1;
+            font-size: 3.5rem;
+        }
+    }
+    .hero {
+        &__title, &__plus {
+            margin-bottom: 2rem;
+        }
+        &__button {
+            margin-right: 3rem;
+        }
+    }
+    .about__image {
+        max-width: 95%;
+    }
+    .faq__title {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 900px) {
+    .header, .footer {
+        font-size: 1.4rem;
+    }
+    .hero, .delivery {
+        &__inner {
+            flex-direction: column-reverse;
+        }
+    }
+    .hero {
+        &__plus {
+            text-align: center;
+        }
+        &__controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .hero, .about, .delivery {
+        margin-bottom: 8rem;
+        &__title {
+            text-align: center;
+        }
+    }
+    .about, .delivery {
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+        &__description {
+            text-align: center;
+        }
+        &__button {
+            margin: 0 auto;
+        }
+    }
+    .about {
+        &__inner {
+            flex-direction: column;
+        }
+        &__image {
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 785px) {
+    button, .button {
+        padding: 2.2rem 6.5rem;
+    }
+    .header {
+        margin-bottom: 3.5rem;
+    }
+    .about__description {
+        margin-bottom: 2rem;
+    }
+    .delivery {
+        &__title, &__description {
+            margin-bottom: 2rem;
+        }
+    }
+    .footer {
+        .menu {
+            &__item {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 685px) {
+    body, .hero__plus {
+        font-size: 1.4rem;
+    }
+    .hero, .about, .delivery {
+        margin-bottom: 5rem;
+    }
+    .hero, .about, .delivery, .faq {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .footer {
+        font-size: 1.2rem;
+        .menu {
+            &__item {
+                margin: 0 0.5rem;
+            }
+        }
+    }
+}
+@media (max-width: 620px) {
+    .header {
+        .menu {
+            &__item {
+                margin: 0 1rem;
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            flex-direction: column;
+        }
+        .logo, .menu {
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media (max-width: 525px) {
+    button, .button {
+        padding: 1.8rem 5.5rem;
+    }
+    .header {
+        font-size: 1.2rem;
+        .menu {
+            &__item {
+                margin: 0 0.5rem;
+            }
+        }
+    }
+    .hero, .about, .delivery {
+        &__title {
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media (max-width: 440px) {
+    .header {
+        padding: 1.5rem;
+        border-bottom: 0.1rem solid $light-gray;
+        .menu {
+            display: none;
+        }
+        .logo {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 415px) {
+    .hero {
+        &__plus {
+            font-size: 1.2rem;
+        }
+        &__controls {
+            flex-direction: column;
+        }
+        &__button {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    .hero, .about, .delivery, .faq {
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+}
+@media (max-width: 356px) {
+    .hero__plus {
+        font-size: 1rem;
+    }
+    .hero, .about, .delivery, .faq {
+        &__title {
+            font-size: 2.2rem;
+        }
+    }
+    .footer {
+        .menu {
+            &__item {
+                margin: 0 0.2rem;
+            }
+        }
+    }
+}
+.payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+}
+.credit-card {
+    width: 32rem;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    border-radius: 2.4rem;
+    background: linear-gradient(167.6deg, rgba(211, 0, 50, 0.8) -9.78%, rgba(255, 38, 88, 0.8) 107.04%);
+    box-shadow: 0rem 2.2rem 3.2rem -1.2rem rgba(211, 0, 50, 0.5);
+    &::before, &::after {
+        content: '';
+        width: 18.699rem;
+        height: 8.766rem;
+        position: absolute;
+    }
+    &::before {
+        left: 0;
+        bottom: 0;
+        background-image: url(../img/payment/left.png);
+    }
+    &::after {
+        top: 0;
+        right: 0;
+        background-image: url(../img/payment/right.png);
+    }
+    &__content {
+        padding-top: 7.1rem;
+        padding-bottom: 2.1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    &__placeholder {
+        font-size: 1.2rem;
+        line-height: 1.25;
+        color: rgba(#F17994, 0.9);
+    }
+    &__logo {
+        top: 2.5rem;
+        right: 3rem;
+        position: absolute;
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__number {
+        margin-bottom: 3.1rem;
+    }
+}
+@media (max-width: 350px) {
+    .credit-card {
+        width: 30rem;
+    }
+}
