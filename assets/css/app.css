@@ -570,6 +570,9 @@ button:hover, .button:hover {
   .credit-card {
     width: 30rem;
   }
+  .payment {
+    padding: 2rem 2.1rem;
+  }
 }
 
 .expire1 {
