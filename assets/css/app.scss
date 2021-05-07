@@ -359,11 +359,46 @@ button, .button {
     }
 }
 .payment {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 549px;
+    max-height: 75.9rem;
+    margin: 0 auto;
+    padding: 5rem 10.1rem;
     margin-top: 15%;
     background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    border: 1px solid #F0F0F0;
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+    &__wrapper {
+        span {
+            display: block;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #191919;
+        }
+    }
+    &__input {
+        width: 100%;
+        padding: 1.5rem 1.8rem;
+        font-size: 1.4rem;
+        border-radius: 0.4rem;
+        background: #ECF1F7;
+        &::placeholder {
+            color: #76797C;
+        }
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+    button {
+        width: 100%;
+    }
+}
+.payment__wrapper.expire {
+    width: 16.5rem;
 }
 .credit-card {
     width: 32rem;
@@ -375,6 +410,7 @@ button, .button {
     border-radius: 2.4rem;
     background: linear-gradient(167.6deg, rgba(211, 0, 50, 0.8) -9.78%, rgba(255, 38, 88, 0.8) 107.04%);
     box-shadow: 0rem 2.2rem 3.2rem -1.2rem rgba(211, 0, 50, 0.5);
+    margin-bottom: 1.5rem;
     &::before, &::after {
         content: '';
         width: 18.699rem;

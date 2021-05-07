@@ -419,18 +419,70 @@ button:hover, .button:hover {
 }
 
 .payment {
+  max-width: 549px;
+  max-height: 75.9rem;
+  margin: 0 auto;
+  padding: 5rem 10.1rem;
+  margin-top: 15%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+  border: 1px solid #F0F0F0;
+}
+
+.payment__title {
+  margin-bottom: 1.5rem;
+}
+
+.payment__wrapper span {
+  display: block;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #191919;
+}
+
+.payment__input {
+  width: 100%;
+  padding: 1.5rem 1.8rem;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  background: #ECF1F7;
+}
+
+.payment__input::-webkit-input-placeholder {
+  color: #76797C;
+}
+
+.payment__input:-ms-input-placeholder {
+  color: #76797C;
+}
+
+.payment__input::-ms-input-placeholder {
+  color: #76797C;
+}
+
+.payment__input::placeholder {
+  color: #76797C;
+}
+
+.payment__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 15%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
-  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.payment button {
+  width: 100%;
+}
+
+.payment__wrapper.expire {
+  width: 16.5rem;
 }
 
 .credit-card {
@@ -444,6 +496,7 @@ button:hover, .button:hover {
   background: linear-gradient(167.6deg, rgba(211, 0, 50, 0.8) -9.78%, rgba(255, 38, 88, 0.8) 107.04%);
   -webkit-box-shadow: 0rem 2.2rem 3.2rem -1.2rem rgba(211, 0, 50, 0.5);
           box-shadow: 0rem 2.2rem 3.2rem -1.2rem rgba(211, 0, 50, 0.5);
+  margin-bottom: 1.5rem;
 }
 
 .credit-card::before, .credit-card::after {

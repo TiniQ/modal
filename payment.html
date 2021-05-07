@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/app.css">
 </head>
 <body>
-    <div class="payment">
+    <form class="payment">
         <div class="credit-card">
             <div class="credit-card__content">
                 <div class="credit-card__logo"><img src="./assets/img/payment/logo/mastercard.png" alt=""></div>
@@ -28,6 +28,24 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="payment__content">
+            <h2 class="payment__title">Оплата заказа <span class="number">№5000315</span></h2>
+            <div class="payment__wrapper">
+                <span class="name">Номер карты</span>
+                <input class="payment__input" type="text" maxlength="16" placeholder="0417 7421 5210 1924">
+            </div>
+            <div class="payment__footer">
+                <div class="payment__wrapper expire">
+                    <span class="name">Срок действия</span>
+                    <input class="payment__input" type="text" maxlength="5" placeholder="MM/YY">
+                </div>
+                <div class="payment__wrapper expire">
+                    <span class="name">CVC</span>
+                    <input class="payment__input" type="text" maxlength="3" placeholder="041">
+                </div>
+            </div>
+        </div>
+        <button class="submit">Оплатить</button>
+    </form>
 </body>
 </html>
