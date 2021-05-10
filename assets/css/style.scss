@@ -1,0 +1,168 @@
+@import './modules/fonts';
+@import './modules/vars';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 10px;
+}
+body {
+    font-family: 'SF UI Text', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: $disabled-text;
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: $dark-bg;
+}
+path {
+    stroke: $disabled-text;
+}
+svg.is-active path,
+svg.is-active rect {
+    stroke: $blue;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.burger {
+    cursor: pointer;
+    top: 4.2rem;
+    right: calc(50% - 14.5px);
+    position: absolute;
+}
+.navigation {
+    padding: 5.2rem 0;
+    position: fixed;
+    height: 100vh;
+    width: 127px;
+    transition: 200ms ease;
+    overflow: hidden;
+    background-color: $light-bg;
+    &__top {
+        margin-bottom: 6rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15rem;
+    }
+    &__item {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__link {
+        display: block;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        transition: all 400ms ease;
+        color: $disabled-text;
+        &:hover, &.is-active {
+            color: rgba($white, 0.6);
+            background-color: #252627;
+        }
+        svg {
+            width: 3rem;
+            margin-bottom: 1.2rem;
+            path {
+                transition: all 400ms ease;
+            }
+        }
+    }
+    &__contacts {
+        padding-left: 5.6rem;
+        &-name {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            p {
+                padding-left: 1.5rem;
+            }
+        }
+        &-link {
+            color: $disabled-text;
+        }
+    }
+}
+.logo, .navigation__contacts {
+    border-top: 1px solid #28292A;
+    padding-top: 2.5rem;
+    opacity: 0;
+    padding-left: 5.5rem;
+    transition: 100ms ease;
+    visibility: hidden;
+}
+.navigation__link:hover svg path,
+.navigation__link.is-active svg path {
+    stroke: $blue;
+}
+.navigation.show {
+    width: 327px;
+    .navigation__link {
+        padding-left: 5.5rem;
+        align-items: center;
+        display: flex;
+        & svg {
+            margin: 10px;
+        }
+    }
+    .burger {
+        top: 2rem;
+        right: 2rem;
+    }
+    .logo, .navigation__contacts {
+        opacity: 1;
+        visibility: visible;
+        transition: 2000ms ease;
+    }
+}
+
+@media (max-width: 650px) {
+    .navigation {
+        width: 100vw;
+        height: 10rem;
+        padding: 0 1rem;
+        bottom: 0;
+        &__list {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 0;
+        }
+        &__link {
+            padding: 2.5rem 0;
+            svg {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .navigation__top {
+        display: none;
+    }
+}
+@media(max-width: 470px) {
+    .navigation {
+        height: 5rem;
+    }
+    .navigation__link {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        svg {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}

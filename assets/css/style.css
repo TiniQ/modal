@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("../fonts/sf_ui_text_regular.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/sf_ui_text_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/sf_ui_text_regular.woff2") format("woff2"), url("../fonts/sf_ui_text_regular.woff") format("woff"), url("../fonts/sf_ui_text_regular.ttf") format("truetype"), url("../fonts/sf_ui_text_regular.svg#sf_ui_text_regular") format("svg");
+  /* Chrome < 4, Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("../fonts/sf_ui_text_medium.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/sf_ui_text_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/sf_ui_text_medium.woff2") format("woff2"), url("../fonts/sf_ui_text_medium.woff") format("woff"), url("../fonts/sf_ui_text_medium.ttf") format("truetype"), url("../fonts/sf_ui_text_medium.svg#sf_ui_text_medium") format("svg");
+  /* Chrome < 4, Legacy iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("../fonts/sf_ui_text_bold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/sf_ui_text_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sf_ui_text_bold.woff2") format("woff2"), url("../fonts/sf_ui_text_bold.woff") format("woff"), url("../fonts/sf_ui_text_bold.ttf") format("truetype"), url("../fonts/sf_ui_text_bold.svg#sf_ui_text_bold") format("svg");
+  /* Chrome < 4, Legacy iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("../fonts/sf_ui_text_semibold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/sf_ui_text_semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/sf_ui_text_semibold.woff2") format("woff2"), url("../fonts/sf_ui_text_semibold.woff") format("woff"), url("../fonts/sf_ui_text_semibold.ttf") format("truetype"), url("../fonts/sf_ui_text_semibold.svg#sf_ui_text_semibold") format("svg");
+  /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'SF UI Text', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #777777;
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #1D1F1F;
+}
+
+path {
+  stroke: #777777;
+}
+
+svg.is-active path,
+svg.is-active rect {
+  stroke: #00A3FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.burger {
+  cursor: pointer;
+  top: 4.2rem;
+  right: calc(50% - 14.5px);
+  position: absolute;
+}
+
+.navigation {
+  padding: 5.2rem 0;
+  position: fixed;
+  height: 100vh;
+  width: 127px;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+  overflow: hidden;
+  background-color: #212223;
+}
+
+.navigation__top {
+  margin-bottom: 6rem;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15rem;
+}
+
+.navigation__item {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.navigation__item:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.navigation__link {
+  display: block;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  color: #777777;
+}
+
+.navigation__link:hover, .navigation__link.is-active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #252627;
+}
+
+.navigation__link svg {
+  width: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.navigation__link svg path {
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.navigation__contacts {
+  padding-left: 5.6rem;
+}
+
+.navigation__contacts-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.navigation__contacts-name p {
+  padding-left: 1.5rem;
+}
+
+.navigation__contacts-link {
+  color: #777777;
+}
+
+.logo, .navigation__contacts {
+  border-top: 1px solid #28292A;
+  padding-top: 2.5rem;
+  opacity: 0;
+  padding-left: 5.5rem;
+  -webkit-transition: 100ms ease;
+  transition: 100ms ease;
+  visibility: hidden;
+}
+
+.navigation__link:hover svg path,
+.navigation__link.is-active svg path {
+  stroke: #00A3FF;
+}
+
+.navigation.show {
+  width: 327px;
+}
+
+.navigation.show .navigation__link {
+  padding-left: 5.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation.show .navigation__link svg {
+  margin: 10px;
+}
+
+.navigation.show .burger {
+  top: 2rem;
+  right: 2rem;
+}
+
+.navigation.show .logo, .navigation.show .navigation__contacts {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 2000ms ease;
+  transition: 2000ms ease;
+}
+
+@media (max-width: 650px) {
+  .navigation {
+    width: 100vw;
+    height: 10rem;
+    padding: 0 1rem;
+    bottom: 0;
+  }
+  .navigation__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .navigation__link {
+    padding: 2.5rem 0;
+  }
+  .navigation__link svg {
+    margin-bottom: 0;
+  }
+  .navigation__top {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .navigation {
+    height: 5rem;
+  }
+  .navigation__link {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+  .navigation__link svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
